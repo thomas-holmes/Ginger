@@ -1,4 +1,5 @@
 Ginger::Application.routes.draw do
+  root to: 'ginger#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

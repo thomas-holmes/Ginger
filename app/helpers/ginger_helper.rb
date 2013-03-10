@@ -1,0 +1,2 @@
+module GingerHelper
+end
