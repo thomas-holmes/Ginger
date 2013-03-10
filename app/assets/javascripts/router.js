@@ -1,0 +1,3 @@
+Ginger.Router.map(function() {
+
+});
