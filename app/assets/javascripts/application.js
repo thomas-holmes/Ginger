@@ -23,7 +23,22 @@ Ginger = Ember.Application.create({
   }
 });
 
+Ginger.EventsRoute = Ember.Route.extend({
+  model: function() {
+    return Ginger.Event.find();
+  }
+});
 
+Ginger.IndexRoute = Ember.Route.extend({
+  model: function() {
+    return Ginger.Event.find();
+  }
+});
+
+Ginger.EventsController = Ember.ArrayController.extend();
+
+Ginger.IndexController = Ember.ArrayController.extend({
+});
 
 Ginger.Event = DS.Model.extend({
   description: DS.attr('string'),

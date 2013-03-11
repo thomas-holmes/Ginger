@@ -1,1 +1,10 @@
+<h2>Index</h2>
+<br>
 {{view Ember.TextField valueBinding="event"}}
+<br>
+<ul>
+  <li>test</li>
+  {{#each controller}}
+  <li>{{ description }}</li>
+  {{/each}}
+</ul>
