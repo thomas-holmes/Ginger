@@ -1,0 +1,13 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#">Ginger</a>
+      <ul class="nav nav-pills pull-right">
+        {{#linkTo "index" tagName="li"}}{{#linkTo "index"}}Home{{/linkTo}}{{/linkTo}}
+        {{#linkTo "about" tagName="li"}}{{#linkTo "about"}}About{{/linkTo}}{{/linkTo}}
+        {{#linkTo "contact" tagName="li"}}{{#linkTo "contact"}}Contact{{/linkTo}}{{/linkTo}}
+      </ul>
+    </div>
+  </div>
+</div>
+{{outlet}}

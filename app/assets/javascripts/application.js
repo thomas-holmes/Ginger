@@ -17,5 +17,37 @@
 //= require ember-data
 //= require_self
 //= require ginger
-Ginger = Ember.Application.create();
-//= require_tree .
+Ginger = Ember.Application.create({
+  ready: function() {
+    console.log("Ember.TEMPLATES: ", Ember.TEMPLATES);
+  }
+});
+
+
+
+Ginger.Event = DS.Model.extend({
+  description: DS.attr('string'),
+  project: DS.attr('string'),
+  time: DS.attr('number'), 
+});
+
+Ginger.Event.FIXTURES = [
+  {
+    id: 1,
+    description: "Test Description 1",
+    project: "Project 1",
+    time: 3600
+  },
+  {
+    id: 2,
+    description: "Test Description 2",
+    project: "Project 1",
+    time: 7200
+  },
+  {
+    id: 3,
+    description: "Test Description 3",
+    project: "Project 2",
+    time: 1800
+  }
+];
