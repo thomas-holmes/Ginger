@@ -1,44 +1,16 @@
-@import "bootstrap";
-
-/* Colorscheme */
-/* Generated from http://colorschemedesigner.com/#0q61Zw0w0w0w0 */
-$primary-0: #FF6A00;
-$primary-1: #BF6B30;
-$primary-2: #A64500;
-$primary-3: #FF8F40;
-$primary-4: #FFAD73;
-
-$secondaryA-0: #FFAD00;
-$secondaryA-1: #BF9130;
-$secondaryA-2: #A67000;
-$secondaryA-3: #FFC140;
-$secondaryA-4: #FFD273;
-
-$secondaryB-0: #EC0033;
-$secondaryB-1: #B12C49;
-$secondaryB-2: #990021;
-$secondaryB-3: #F53D65;
-$secondaryB-4: #F56E8B;
-
-$complementary-0: #00A08A;
-$complementary-1: #1E786C;
-$complementary-2: #00685A;
-$complementary-3: #34D0BA;
-$complementary-4: #5DD0C0;
-
-/* NavBar Restyling */
-.navbar-inner {
-  background-color: $secondaryA-0;
-}
+@import "foundation";
+@import "colors";
 
 /* Entry Area */
+
 .entrybox {
-  width: 100%;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 .entryarea {
   height: 100px;
-  padding-left: 5px;
-  padding-right: 20px;
-  background: $primary-0
+  padding: 30px 5px;
+  padding-bottom: 150px;
+  background: $primary-3;
 }

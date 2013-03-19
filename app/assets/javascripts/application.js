@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require handlebars
 //= require ember
 //= require ember-data
@@ -66,3 +67,5 @@ Ginger.Event.FIXTURES = [
     time: 1800
   }
 ];
+
+$(document).foundation();
