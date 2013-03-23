@@ -39,6 +39,20 @@ Ginger.IndexRoute = Ember.Route.extend({
 Ginger.EventsController = Ember.ArrayController.extend();
 
 Ginger.IndexController = Ember.ArrayController.extend({
+  addEntry: function() {
+    Ginger.Event.createRecord(
+      {
+        description: this.entry,
+        project: this.project,
+        time: this.date,
+      });
+    this.clearInput();
+  },
+  clearInput: function() {
+    this.set("entry", null);
+    this.set("date", null);
+    this.set("project", null);
+  }
 });
 
 Ginger.Event = DS.Model.extend({

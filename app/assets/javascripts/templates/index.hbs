@@ -6,9 +6,9 @@
       <div class="entrybox project large-3 columns">{{view Ember.TextField valueBinding="project"}}</div>
       <div class="entrybox entry large-7 columns">{{view Ember.TextField valueBinding="entry"}}</div>
       -->
-      <span class="large-2 columns entrybox">{{view Ember.TextField valueBinding="date"}}</span>
-      <span class="large-3 columns entrybox">{{view Ember.TextField valueBinding="project"}}</span>
-      <span class="large-7 columns entrybox">{{view Ember.TextField valueBinding="entry"}}</span>
+      <span class="large-2 columns entrybox">{{view Ember.TextField valueBinding="date" action="addEntry"}}</span>
+      <span class="large-3 columns entrybox">{{view Ember.TextField valueBinding="project" action="addEntry"}}</span>
+      <span class="large-7 columns entrybox">{{view Ember.TextField valueBinding="entry" action="addEntry"}}</span>
     </div>
   </div>
 
