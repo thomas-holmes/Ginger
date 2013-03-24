@@ -3,6 +3,9 @@
 /* Get EmCalc */
 @import "foundation/foundation-global";
 
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
 /* Entry Area */
 
 span {
@@ -33,7 +36,7 @@ div.entries {
   ul.entries {
     list-style: none;
     li {
-      border-top: 1px solid;
+     border-top: 1px solid;
       border-color: $primary-3;
       /* First of type required due to ember/handlebars/metamorphs issue */
       &:first-of-type {
@@ -41,4 +44,8 @@ div.entries {
       }
     }
   }
+}
+
+.entries span {
+  font-family: 'Droid Serif', serif;
 }
